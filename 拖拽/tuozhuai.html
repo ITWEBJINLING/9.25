@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>拖拽</title>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.box{
+		width: 200px;
+		height: 100px;
+		background: pink;
+		position: absolute;
+	}
+	.box1{
+		width: 200px;
+		height: 100px;
+		background: blue;
+		position: absolute;
+	}
+</style>
+<body>
+	<!-- 鼠标移动到哪里，元素就跟过去 -->
+     <div class="box"></div>
+     <div class="box1"></div>
+     <!-- <script src='js/tuo.js'></script> -->
+     <script>
+     window.addEventListener('load',function(){	
+     	   let box1=document.querySelector('.box1')
+           let box=document.querySelector('.box');
+           let drag=new Drag(box);
+           let drag1=new Drag(box1);
+           drag.move(); 
+           drag1.move();
+     })  
+     </script>
+     <script src='js/obj.js'></script>   
+</body>
+</html>

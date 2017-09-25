@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>留言</title>
+</head>
+<style>
+	body{
+		width: 100%;
+		height: 100%;
+		background: #000;
+	}
+	header{
+		width:800px;
+		height:100px;
+		color: #fff;
+		font-size:50px;
+		line-height:100px;
+		text-align: center;
+	}
+	.wenbenyu{
+		width:800px;
+		height: 200px;
+		resize: none;
+		border-radius: 20px;
+		border: 2px solid yellowgreen;
+		margin-left:230px;
+		padding: 40px;
+		color: #fff;
+		background: none;
+		font-size: 30px;
+	}
+	.wenbenyu:focus{
+		outline: none;
+	}
+	.tijiao{
+		width:200px;
+		height: 50px;
+		background:none;
+		margin-left: 570px;
+		border: 1px solid seagreen;
+		color: #fff;
+		font-size: 26px;
+		margin-top: 20px;
+	}
+	.tijiao:hover{
+		background: green;
+	}
+	.tijiaohou{
+		display: block;
+		width: 1024px;
+		height: 150px;
+		background: rgba(82, 82,82,0.8);
+		border:2px solid rgba(155,155,1,0.5);
+		margin-top: 20px;
+		margin: 20px auto;
+	}
+</style>
+<body>
+     <header>
+     	留言板
+     </header>
+     <textarea name="liuyan" cols="30" rows="20" class="wenbenyu" maxLength="100"></textarea>
+     <button class="tijiao">提交</button>
+     <p class="tijiaohou"></p>
+	 <script src='js/liuyan.js'></script>
+</body>
+</html>
