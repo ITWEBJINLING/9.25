@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>留言</title>
+</head>
+<style>
+	body{
+		width: 100%;
+		height: 100%;
+		background: #000;
+	}
+	header{
+		width:800px;
+		height:100px;
+		color: #fff;
+		font-size:50px;
+		line-height:100px;
+		text-align: center;
+	}
+	.name{
+		width:800px;
+		resize: none;
+		border-radius:20px;
+		margin-left:240px;
+		border: 2px solid yellowgreen;
+		padding: 40px;
+		color: #fff;
+		background: none;
+		font-size: 18px;
+	}
+	.name:focus{
+		outline: none;
+	}
+	.wenbenyu{
+		width:800px;
+		height: 200px;
+		resize: none;
+		border-radius: 20px;
+		border: 2px solid yellowgreen;
+		margin-left:240px;
+		margin-top: 10px;
+		padding: 40px;
+		color: #fff;
+		background: none;
+		font-size: 30px;
+	}
+	.wenbenyu:focus{
+		outline: none;
+	}
+	.tijiao{
+		width:200px;
+		height: 50px;
+		background:none;
+		margin-left: 550px;
+		border: 1px solid seagreen;
+		color: #fff;
+		font-size: 26px;
+		margin-top: 20px;
+	}
+	.tijiao:hover{
+		background: green;
+	}
+	.tijiaohou{
+		display: block;
+		width: 1024px;
+		min-height: 50px;
+		color: #CCc;
+		border:2px solid rgba(155,155,1,0.5);
+		margin-top: 20px;
+		margin: 20px auto;
+	}
+	.tishiwen{
+		width: 800px;
+		height: 24px;
+		color: #666;
+		border-radius: 10px;
+		border: 1px solid #964;
+		margin: 20px auto;
+	}
+    .s1,.s2{
+    	color: #ccc;
+    	font-size:22px;
+    }
+    .dingwei{
+        position: relative;
+        border: 1px dashed silver;
+        width: 800px;
+        min-height: 180px;
+    	margin: 0px auto;
+    }
+    .haoyou{
+    	position: absolute;
+    	left: 10px;
+    	top: 10px;
+    	width: 60px;
+    	height: 120px;
+    }
+    .haoyou img{
+    	width: 50px;
+    	height:50px;
+    }
+    h3{
+    	color: #ccc;
+    	font-size: 20px;
+    }
+    p{
+    	color: #fff;
+    	font-size: 16px;
+    }
+    .liuyanneirong{
+    	font-size: 16px;
+        color: #ccc;
+        float: left;
+        position: absolute;
+        left:250px;
+        top: 40px;
+        height:120px;
+    }
+</style>
+<body>
+     <header>
+     	留言板
+     </header>
+     <textarea name="name" class="name" placeholder="请输入你的名字" maxlength="10"></textarea>
+     <textarea name="liuyan" cols="30" rows="20" class="wenbenyu" maxLength="100" placeholder="你有什么想说的吗？可以在这里！"></textarea>
+     <button class="tijiao">提交</button>
+     <div class="tishiwen">你已经输入:<span class="s1"></span>
+          你还可以输入：<span class="s2"></span>
+     </div>
+     <div class="dingwei">
+     	<div class="haoyou">
+     		<img src="" alt="">
+            <h3></h3>
+            <p></p>     
+     	</div>
+     	<div class="liuyanneirong"></div>
+     </div>
+	 <script src='js/liuyan.js'></script>
+</body>
+</html>
